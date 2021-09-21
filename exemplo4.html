@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exemplo 4</title>
+  </head>
+<body>
+
+Documento atual<br>
+    
+<script language="javascript">
+    var janela1, janela2;
+
+    janela1 = window.open('', '', "width=200, height=200");
+    janela1.document.write("<body bgcolor='red'>");
+    janela1.document.write("<p style='color:white;'>teste1<style></p>");
+    janela1.document.write("<body>");
+
+    janela2 = window.open("https://cbt.ifsp.edu.br", "_blank");
+
+
+
+</script>
+continuo no document atual <br>
+<script language="javascript">
+    janela1.document.write("teste2<br>");
+</script>
+   
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exemplo 5</title>
+  </head>
+<body>
+    <script language="javascript">
+        var linhas, colunas;
+        linhas = parseInt(window.prompt("Quantas linhas?"));
+        colunas = parseInt(window.prompt("Quantas colunas?"));
+        window.alert("Vamos gerar uma tabela " + linhas +  " x " + colunas);
+        document.write("<h1>Este documento está sendo gerado por um navegador " + navigator.appName + " Versão " + navigator.appVersion + "</h1>");
+    </script>
+
+    <table border="1">
+
+        <script language="javascript">
+            var i, j, estilo;
+            for(j=1; j<=linhas; ++j)
+            {
+                document.write("<tr>");
+                for(i=1; i<=colunas; ++i)
+                {
+                    if (j%2==0)
+                    {
+                        estilo="width:100px;color:red;";
+                    }
+                    else
+                    {
+                        estilo="width:100px;color:blue;";
+                    }
+                   document.write("<td style='" + estilo + "'>Linha: " + j + ", Coluna: " + i + "</td>");
+                }
+              document.write("</tr>");
+            }
+    </script>
+    </table>
+
+
+</body>
+</html>
